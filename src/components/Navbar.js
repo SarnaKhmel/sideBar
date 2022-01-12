@@ -2,9 +2,30 @@ import React, { useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { SidebarData } from "./SidebarData";
+//import { SidebarData } from "../components/SidebarData";
 import "./Navbar.css";
 import { IconContext } from "react-icons";
+
+const SidebarData = [
+  {
+    title: "Home",
+    path: "/",
+    icon: <AiIcons.AiFillHome />,
+    cName: "nav-text",
+  },
+  {
+    title: "Education",
+    path: "/education",
+    icon: <AiIcons.AiFillBook />,
+    cName: "nav-text",
+  },
+  {
+    title: "Work",
+    path: "/work",
+    icon: <AiIcons.AiFillCode />,
+    cName: "nav-text",
+  },
+];
 
 export default function Navbar() {
   const [sidebar, setSidebar] = useState(false);

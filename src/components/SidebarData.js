@@ -3,7 +3,7 @@ import React from "react";
 import * as AiIcons from "react-icons/ai";
 //import * as IoIcons from "react-icons/io";
 
-export const SideBar = [
+const SideBar = [
   {
     title: "Home",
     path: "/",
@@ -19,7 +19,9 @@ export const SideBar = [
   {
     title: "Work",
     path: "/work",
-    icon: <AiIcons.MdWork />,
+    icon: <AiIcons.AiFillCode />,
     cName: "nav-text",
   },
 ];
+
+export default SideBar;
